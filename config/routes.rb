@@ -2,5 +2,5 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   resources :songs, except: [:destroy]
   resources :artists, except: [:destroy]
-  resources :genres, only: [:create, :update, :show]
+  resources :genres, except: [:destroy]
 end
